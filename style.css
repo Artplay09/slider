@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+    
 .slide{
-   position: relative;
+   position: absolute;
    display: inline-block;
+   left: -100000000000000000px;
 }
 .block{
     background-color: #845ec2;
@@ -20,7 +22,7 @@
     font-size: 40px;
     color: white;
     font-family: monospace;
-   
+
 }
 .arrow{
     background-color: rgba(70, 70, 70, 0.815);
@@ -55,12 +57,13 @@
     height: 200px;
     width: 300px;
     overflow: hidden;
+    
 }
 .left{
     left: 0;
     top: 50%;
     transform: translateY(-50%) rotate(180deg);
-    
+
 }
 .right{
     right: 0;
@@ -71,4 +74,17 @@
     position: relative;
     height: 200px;
     width: 300px;
+    
+}
+.dots{
+text-align: center;
+}
+body{
+   display: flex; 
+     align-items: center;
+    justify-content: center;
+   height: 100vh;
+}   
+.active{
+    left: 0;
 }
